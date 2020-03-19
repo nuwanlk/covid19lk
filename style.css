@@ -131,6 +131,9 @@ h5 {
 
 .grid-item-9 {
   margin:10px;
+  display:flex;
+  align-items:center;
+  
 }
 
 @media only screen and (max-width: 1000px) {
