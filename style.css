@@ -1,6 +1,7 @@
 * {
   margin: 0;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -23,6 +24,7 @@ marquee {
   grid-gap: 30px;
   margin: 25px;
 }
+
 .grid-item-1 {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -60,9 +62,10 @@ marquee {
 }
 
 img {
-  width: 85%;
+  width: 81%;
   border-radius: 20px;
 }
+
 .flexthis {
   display: flex;
 }
@@ -78,10 +81,12 @@ h2 {
   color: #F33E6B;
   margin-bottom: 10px;
 }
+
 h3 {
   font-family: "Abhaya Libre", serif;
   padding: 5px;
 }
+
 .grid-item-6,
 .grid-item-7,
 .grid-item-8 {
@@ -95,6 +100,7 @@ h3 {
   text-align: center;
   margin: 10px 0;
 }
+
 p {
   font-size: 1.5vw;
   text-align: center;
@@ -116,24 +122,76 @@ mark {
   color: #F33E6B;
   background-color: white;
 }
+
 a {
   text-decoration: none;
 }
 
 iframe {
   margin-bottom: 20px;
+  border: 0;
 }
 
 h5 {
   color: #6A6A6A;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
-.grid-item-9 {
-  margin:10px;
-  display:flex;
-  align-items:center;
-  
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.day {
+  color: #12536B;
+}
+
+.menu {
+  display: none;
+}
+
+.show-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.nav nav ul {
+  list-style: none;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.nav nav ul li {
+  padding: 10px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 900;
+}
+
+.nav nav ul :hover {
+  background-color: #F33E6B;
+  color: white;
+  font-weight: 1000;
+}
+.nav-child1 {
+  cursor: help;
+}
+
+.nav nav ul a li {
+  color: black;
+}
+
+.exit-btn {
+  display: none;
+}
+.coronavirus_link {
+  color: black;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -141,21 +199,23 @@ h5 {
     display: inline-block;
   }
 
+  marquee {
+    margin-bottom: 15px;
+    z-index: 2;
+  }
   .grid-item-6,
   .grid-item-7,
   .grid-item-8 {
-    border: black solid;
+    box-shadow: 0 0 15px #aaaaaa;
     border-radius: 30px;
     margin-bottom: 10px;
     padding: 10px;
     text-align: justify;
   }
-
   .iframe {
     display: flex;
     flex-direction: column;
   }
-
   h5 {
     margin-bottom: 20px;
     margin-top: 0;
@@ -164,11 +224,54 @@ h5 {
   .grid-item-5 {
     margin-bottom: 0;
   }
-
   .flexthis {
     display: block;
   }
-  .grid-item-9 {
-  
-}
+  .grid-item-1 {
+    margin-bottom: 10px;
+    margin-top: 60px;
+  }
+  .menu {
+    display: block;
+    width: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .nav nav ul a li {
+    color: white;
+  }
+  .nav nav ul {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    left: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    padding-top: 1em;
+    list-style: none;
+  }
+  nav ul li a:hover {
+    background-color: #F33E6B;
+  }
+  .exit-btn {
+    display: block;
+    width: 25px;
+    cursor:pointer;
+  }
+  footer {
+    font-size: 15px;
+  }
+  .coronavirus_link {
+    color: black;
+  }
 }
